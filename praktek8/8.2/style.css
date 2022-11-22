@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+header, footer  {
+    background-color: cadetblue;
+    padding: 2rem;
+}
+#main {
+    display: flex;
+    flex: 1;
+}
+
+#main article {
+    background-color: whitesmoke;
+    flex: 2;
+}
+
+#main aside {
+    background-color: burlywood;
+    flex: 1;
+}
+
+#main nav {
+    background-color: darkseagreen;
+    flex: 1;
+}
