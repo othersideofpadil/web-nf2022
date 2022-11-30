@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Jumlah 2 Bilangan</title>
+    <script>
+        function jumlah () {
+            let angka1= parseInt(document.getElementById ('angka1').value);
+            let angka2= parseInt(document.getElementById ('angka2').value);
+            let hasil;
+
+            if (angka1 == "+"){
+                hasil = angka1 + angka2
+
+            }
+
+            else if (angka2 == "+"){
+                hasil = angka2 + angka1
+            }
+
+            else {
+                hasil = angka1 + angka2;
+            }
+
+            document.getElementById ('hasil').value = hasil;
+        }
+    </script>
+</head>
+<body>
+    <h3>Menghitung Jumlah 2 Bilangan</h3>
+    <table>
+        <tr>
+            <td>
+                <p><input type="number" id="angka1" onchange="jumlah ()"></p>
+                <p>+</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><input type="number" id="angka2" onchange="jumlah()"></p>
+                <p>=</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><input type="number" id="hasil" readonly></p>
+            </td>
+        </tr>
+
+
+    </table>
+</body>
+</html>
